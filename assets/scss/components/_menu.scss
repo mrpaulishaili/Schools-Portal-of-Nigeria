@@ -1,0 +1,60 @@
+.nav {
+  position: relative;
+  height: 100%;
+  z-index: 100;
+  width: 100%;
+  display: flex;justify-content: flex-end;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  height: 100%;
+  position: relative;
+  align-items: center;
+
+  span {
+    font-weight: 600;
+  }
+  &.mobile {
+    flex-direction: column;
+    position: absolute;
+    align-items: flex-start;
+    top: calc(100% + 20px);
+    right: 0;
+    padding: 1rem;
+    background-color: #f4f4f4;
+    z-index: -1;
+    height: auto;
+    opacity: 0;
+
+    &.active {
+      z-index: 100;
+      top: 100%;
+      opacity: 1;
+    }
+  }
+
+  &_link {
+    display: flex;
+    padding: 0.5rem 0.8rem;
+    white-space: nowrap;
+    font-size: 0.85rem;
+  }
+}
+
+.mobile-menu-toggler {
+  height: 100%;
+  width: 3rem;
+  padding: 0.25rem;
+  display: none;
+  cursor: pointer;
+
+  &.mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* Create Mobile class then add or remove class based on screen detection */

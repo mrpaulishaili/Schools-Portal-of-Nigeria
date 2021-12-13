@@ -1,0 +1,36 @@
+.section {
+  padding: 2rem;
+
+  &.hero {
+    height: calc(100vh - var(--header-height));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-color: rgba($color: #000000, $alpha: 0.7);
+    background-blend-mode: overlay;
+    color: #fff;
+
+    .content {
+      position: relative;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      > * {
+        position: absolute;
+        visibility: hidden;
+        font-weight: 100;
+        color: #f3f3f3f8;
+        letter-spacing: 1px;
+        font-size: 2.25rem;
+        text-align: center;
+
+        &.active {
+          visibility: visible;
+        }
+      }
+    }
+  }
+}

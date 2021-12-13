@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%-include('modules/head.ejs'); %>
+    <title>Schools Portal of Nigeria</title>
+  </head>
+  <body id="HomePage">
+    <div class="loader-screen">
+      <img src="/images/loading.gif" alt="loading..." />
+    </div>
+    <header><%-include('components/header.ejs'); %></header>
+    <main>
+      <div class="main">
+        <section class="section hero">
+          <div class="content">
+            <div class="active">All about schools in Nigeria</div>
+            <div class="">The Portal for every Student in Nigeria</div>
+          </div>
+        </section>
+        <section class="grid-system institutions">
+          <div class="grid-item institution">
+            <a href="/institutes/higher.html">
+              <p>Higher Education</p>
+            </a>
+          </div>
+          <div class="grid-item institution">
+            <a href="#"> <p>Senior Secondary Schools</p></a>
+          </div>
+          <div class="grid-item institution">
+            <a href="#"> <p>Junior Secondary Schools</p></a>
+          </div>
+          <div class="grid-item institution">
+            <a href="#">
+              <p>Primary Schools</p>
+            </a>
+          </div>
+          <div class="grid-item institution">
+            <a href="#">
+              <p>Nursery Schools</p>
+            </a>
+          </div>
+          <div class="grid-item institution">
+            <a href="#">
+              <p>Kidagarten Schools</p>
+            </a>
+          </div>
+        </section>
+
+        <section class="section">
+          <h1 class="section-title">Approved Bodies</h1>
+
+          <div id="carousel-wrapper" class="carousel-wrapper">
+            <div id="menu" class="carousel-wrapper-menu">
+              <div id="current-option">
+                <span
+                  id="current-option-text1"
+                  data-previous-text=""
+                  data-next-text=""
+                ></span>
+                <span
+                  id="current-option-text2"
+                  data-previous-text=""
+                  data-next-text=""
+                ></span>
+              </div>
+              <button id="previous-option"></button>
+              <button id="next-option"></button>
+            </div>
+            <div id="image"></div>
+          </div>
+        </section>
+
+        <section class="section blog-section">
+          <h1 class="section-title">Latest from Blog</h1>
+          <div class="blogs">
+            <div class="blog">
+              <h1>Blog title</h1>
+              <p>
+                lorem in thich it is a placeholder for writing the blog contents
+                for this website being built
+              </p>
+            </div>
+            <div class="blog">
+              <h1>Blog title</h1>
+              <p>
+                lorem in thich it is a placeholder for writing the blog contents
+                for this website being built
+              </p>
+            </div>
+            <div class="blog">
+              <h1>Blog title</h1>
+              <p>
+                lorem in thich it is a placeholder for writing the blog contents
+                for this website being built
+              </p>
+            </div>
+            <div class="blog">
+              <h1>Blog title</h1>
+              <p>
+                lorem in thich it is a placeholder for writing the blog contents
+                for this website being built
+              </p>
+            </div>
+            <div class="blog">
+              <h1>Blog title</h1>
+              <p>
+                This blog section's content is sourced from various school blog sites that have partnered with us and each of the click is set to up their SEO and thus, increase their search result on the Google search engine.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="modal close">
+        <div class="modal-close">&times;</div>
+        <h2>Welcome to Version 2.0 of Schools Portal of Nigeria</h2>
+      </div>
+    </main>
+    <footer><%-include('components/footer.ejs'); %></footer>
+
+    <script src="/js/index.js" type="module"></script>
+  </body>
+</html>

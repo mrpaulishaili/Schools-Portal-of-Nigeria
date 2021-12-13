@@ -1,0 +1,16 @@
+.svgContainer {
+  width: 3em;
+  height: 100%;
+
+  &.search-bar {
+    height: 2rem;
+    width: 2rem;
+    padding: 0.25rem;
+    margin-right: 0.5rem;
+
+    &:hover {
+      opacity: 0.8;
+      cursor: pointer;
+    }
+  }
+}
